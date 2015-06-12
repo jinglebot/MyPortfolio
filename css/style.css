@@ -1,0 +1,42 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.app {
+	display: flex;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+.text-muted {
+	color: #BCBBBB;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.title-super {
+	font-size: 50px;
+	margin-top: 50px;
+}
+
+.title-logo {
+	margin-top: 20px;
+}
+
+hr {
+	height:3px;
+	background:#BCBBBB;
+}
+
+a:link {
+	color: #747704;
+}
