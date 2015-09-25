@@ -5,65 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-1.11.3.js">
     </script>
     <script type="text/javascript" src="js/bootstrap.min.js">
     </script>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <div class="container">
-
-      <div class="row">
-        <div class="col-md-6">
-          <img class="title-logo" src=" http://placehold.it/150x150" alt="My logo">
+      <div class="row" id="header">
+        <div class="col-md-2 title-logo">
+          <img class="img-responsive" src="http://placekitten.com/g/120/120" alt="My Logo">
         </div>
-        <div class="col-md-6 text-right">
-          <h1 class="title-super">jinglebot</h1>
-          <h4 class="text-uppercase">Christine Sales</h4>
-          <h4>html css c++</h4>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <hr style="height:10px color:#BCBBBB">
+        <div class="col-md-10 title-info">
+          <h1 class="title-super">Christine Sales</h1>
+          <h3 class="handle">jinglebot</h3>
+          <h4 class="specialty">html css javascript c++</h4>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12">
-          <img class="img-responsive" src="http://placehold.it/1050x350" alt="Main Image">
+          <hr class="linestyle">
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-muted"><strong>Featured Work</strong></h2>
+          <img class="img-responsive" src="http://placekitten.com/g/1200/350" alt="Main Image">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-muted">Featured Work</h2>
         </div>
       </div>
 
       <div class="row text-center strong">
         <div class="col-md-4">
-          <img class="img-responsive" src="http://placehold.it/400x300" alt="About" data-toggle="modal" data-target="#about">
+          <img class="img-responsive" src="http://placekitten.com/g/400/350" alt="AboutMe" data-toggle="modal" data-target="#about">
           <h3 class="text-uppercase"><strong>About Me</strong></h3>
           <p><a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a></p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="http://placehold.it/400x300" alt="Portfolio" data-toggle="modal" data-target="#portfolio">
-          <h3 class="text-uppercase"><strong>HTML/CSS</strong></h3>
+          <img class="img-responsive" src="http://placekitten.com/g/400/350" alt="Portfolio" data-toggle="modal" data-target="#portfolio">
+          <h3 class="text-uppercase"><strong>PORTFOLIO</strong></h3>
           <p><a href="https://github.com/udacity/Sunflower/">http://github.com/udacity/Sunflower/</a></p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="http://placehold.it/400x300" alt="Programs" data-toggle="modal" data-target="#programs">
-          <h3 class="text-uppercase"><strong>C++ Programs</strong></h3>
+          <img class="img-responsive" src="http://placekitten.com/g/400/350" alt="Programs" data-toggle="modal" data-target="#programs">
+          <h3 class="text-uppercase"><strong>C++ PROGRAMS</strong></h3>
           <p><a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a></p>
         </div>
       </div>
-
     </div>
 
     <!-- Modal 1 -->
@@ -71,11 +70,11 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="AboutModalLabel"><b>jinglebot</b</h4>
+            <h4 class="modal-title" id="AboutModalLabel"><b>About jinglebot</b</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="http://placehold.it/550x300" alt="About Me">
-            This is about me! me mem emmemememmem me!!!
+            <img class="img-responsive" src="https://farm6.staticflickr.com/5771/21428645648_77fbc2b3c3_o.jpg" alt="AboutMe">
+            This is about me! me mememememememe me!!!
             (Background)
             (Contact me)
             email
@@ -96,7 +95,7 @@
             <h4 class="modal-title" id="PortfolioModalLabel">jinglebot Portfolio</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="http://placehold.it/550x300" alt="Portfolio">
+            <img class="img-responsive" src="http://placekitten.com/g/550/300" alt="Portfolio">
             My sample works
           </div>
           <div class="modal-footer">
@@ -111,10 +110,10 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="ProgramsModalLabel">Programs</h4>
+            <h4 class="modal-title" id="ProgramsModalLabel">jinglebot Programs</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="http://placehold.it/550x300" alt="Programs">
+            <img class="img-responsive" src="http://placekitten.com/g/550/300" alt="Programs">
             C++ Programs
           </div>
           <div class="modal-footer">

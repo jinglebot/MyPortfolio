@@ -5,38 +5,214 @@
     box-sizing: border-box;
 }
 
-.app {
+.row {
 	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 body {
-	font-family: 'Lato', sans-serif;
-	color: #747704;
-	font-weight: 300;
+	min-width: 300px;
+	max-width: 1000px;
+	margin: auto;
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(4, 51, 119, 0.44);
 }
 
-.text-muted {
-	color: #BCBBBB;
+img {
+	margin: auto;
+	max-width: 100%;
+	border: 3px solid gray;
 }
 
-.text-thin {
-	font-weight: 100;
-}
+/* HEADER */
 
-.title-super {
-	font-size: 50px;
-	margin-top: 50px;
+.header {
+	height: 100%;
+	width: 100%;
+	margin: 10px;
 }
 
 .title-logo {
-	margin-top: 20px;
+	max-height: 125px;
+	min-width: 120px;
+	vertical-align: middle;
+	margin: auto;
 }
 
-hr {
-	height:3px;
-	background:#BCBBBB;
+.title-info {
+	margin: auto;
+	text-align: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(102, 56, 38, 0.32), rgba(0, 0, 0, 0));
 }
 
-a:link {
-	color: #747704;
+.title-super {
+	font-size: 22px;
+	font-weight: bolder;
+	text-transform: uppercase;
 }
+
+.handle {
+	margin-top: 0px;
+	font-size: 14px;
+	letter-spacing: 1em;
+}
+
+.specialty {
+	font-size: 10px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+/* from https://css-tricks.com/examples/hrs/ */
+hr.linestyle {
+	height: 12px;
+	border: 0;
+	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+*/a:link {
+	color: rgba(4, 51, 119, 0.44);
+}
+
+.text-muted {
+	color: rgba(4, 51, 119, 0.44);
+	font-weight: 100;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 400px) {
+
+	.title-logo {
+		width: 100%;
+		height: 100%;
+	}
+
+	.title-info {
+		text-align: center;
+	}
+
+	.title-super /*h1, h2*/ {
+		font-size: 28px;
+		font-weight: bold;
+	/*	margin-bottom: 5px;
+	*/}
+
+	/*.handle*/h3 {
+/*		font-size: 10px;
+		margin-bottom: 5px;
+*/	}
+
+	/*.specialty*/h4, p {
+/*		font-size: 10px;
+		letter-spacing: 0.05em;
+*/		}
+
+/*	hr {
+	height: 2px;
+	background: solid red;
+}
+*/
+@media screen and (min-width: 500px) {
+
+	.title-logo {
+		width: 16.67%;
+	}
+
+	.title-info {
+		text-align: right;
+	}
+
+	.title-super /*h1, h2*/ {
+		/*font-size: 40px;*/
+		font-weight: bold;
+/*		margin-bottom: 8px;
+*/	}
+
+	/*.handle*/h3 {
+/*		font-size: 16px;
+		margin-bottom: 8px;
+*/	}
+
+	/*.specialty*/h4 {
+/*		font-size: 12px;
+		letter-spacing: 0.05em;
+*/	}
+}
+
+/*hr {
+	height: 2px;
+	width: 100%;
+	background: solid red;
+	color: rgba(4, 51, 119, 0.44);
+}*/
+
+
+@media screen and (min-width: 650px) {
+
+	.title-logo {
+		width: 16.67%;
+	}
+
+	.title-super {
+		font-size: 40px;
+	}
+
+	.handle {
+		font-size: 16px;
+	}
+
+	.specialty {
+		font-size: 14px;
+	}
+
+@media screen and (min-width: 800px) {
+
+	.title-logo {
+		width: 16.67%;
+	}
+
+	.title-super {
+		font-size: 45px;
+	}
+
+	.handle {
+		font-size: 16px;
+	}
+
+	.specialty {
+		font-size: 14px;
+	}
+
+	hr.linestyle {
+		height: 12px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+
+@media screen and (min-width: 1000px) {
+
+	.title-logo {
+		width: 16.67%;
+	}
+
+	.title-info {
+		width: 83.33%;
+	}
+
+	.title-super {
+		font-size: 50px;
+	}
+
+	.handle {
+		font-size: 20px;
+	}
+
+	.specialty {
+		font-size: 14px;
+	}
+}
+
+
+
