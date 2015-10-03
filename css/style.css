@@ -25,6 +25,11 @@ img {
 	border: 3px solid gray;
 }
 
+article {
+	font-size: 1em;
+
+}
+
 /* HEADER */
 
 .header {
