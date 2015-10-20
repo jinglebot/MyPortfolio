@@ -5,20 +5,27 @@
     box-sizing: border-box;
 }
 
-/*.row {
+.row {
 	display: flex;
-	flex-wrap: wrap;
+/*	flex-wrap: wrap;*/
 	width: 100%;
 }
-*/
+
 body {
-	min-width: 350px;
+	min-width: 300px;
 	max-width: 1000px;
 	margin: auto;
 	font-family: 'Orbitron', sans-serif;
 	color: rgba(0, 0, 0, 0.5);
-	background: url(backgroundpage.png);
-    /*background-image: linear-gradient(to right, rgba(102, 56, 38, 0.32), rgba(0, 0, 0, 0), rgba(102, 56, 38, 0.32));  alternative background */
+    /*background-image: linear-gradient(to right, rgba(102, 56, 38, 0.32), rgba(0, 0, 0, 0), rgba(102, 56, 38, 0.32));*/
+	background-image: url(backgroundpage3.png);
+	background-size: cover;
+}
+
+img {
+	text-align: center;
+	align-items: center;
+	box-shadow: 4px 4px 4px #888888;
 }
 
 h3 {
@@ -28,85 +35,120 @@ h3 {
 }
 
 a {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.75);
 	font-weight: bolder;
-}
-
-img {
-	margin: auto;
-	max-width: 100%;
-	border: 1px solid white;
-	box-shadow: 2px 2px 2px #888888;
+	min-height: 48px;
 }
 
 /* HEADER */
 
-/*.header {
-	height: 100%;
-	width: 100%;
-	margin: 10px;
+#header {
+	justify-content: center;
 }
-*/
+
 .title-logo {
+	border: none;
 	box-shadow: none;
-/*	max-height: 125px;
-	min-width: 120px;
-	vertical-align: middle;
-	margin: auto;*/
+	margin: auto;
+	justify-content: center;
+	align-items: center;
 }
 
 .title-info {
 	margin: auto;
 	text-align: center;
 	color: rgba(256, 256, 256, 1);
+	text-shadow: 3px 3px 3px #aaa;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(102, 56, 38, 0.32), rgba(0, 0, 0, 0));
 }
 
 .title-super {
-	font-size: 5em;
+	font-size: 6em;
 	font-weight: bolder;
 	text-transform: uppercase;
 }
 
 .handle {
-/*	margin-top: 0px;
-	font-size: 14px;
-*/	letter-spacing: 1em;
+	letter-spacing: 1em;
 }
 
 .specialty {
-/*	font-size: 10px;*/
 	letter-spacing: 0.5em;
 }
 
 /* from https://css-tricks.com/examples/hrs/ */
 hr.linestyle {
 	height: 12px;
-	/*border: 0;*/
 	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
-/*
-a:link {
-	color: rgba(4, 51, 119, 0.44);
+
+.presentproj {
+	align-items: center;
+	padding: 10px;
 }
 
-.text-muted {
-	color: rgba(4, 51, 119, 0.44);
-	font-weight: 100;
+.projlinks {
+    padding-bottom: 20px:;
+    width: 100%;
 }
+
+.projlinks:last-of-type {
+	margin-bottom: 20px;
+}
+
+.projimgs {
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+/*	width: 	calc((100% - 20px)/2);
+	box-shadow: 4px 4px 4px #888888;
+	display: block;*/
+	/*height: 10vh;*/
+
+
+/*.presentproj img:last-of-type {
+	margin-left: 20px;
+}
+*/
+
+
 
 /* MEDIA QUERIES */
 
-/*@media screen and (min-width: 400px) {
+@media screen and (max-width: 399px) {
 
 	.title-logo {
-		width: 100%;
-		height: 100%;
-	}
+		/*width: 25vw;*/
+		/*size: 30vw;*/
+/*	max-height: 125px;
+	margin: auto;*/
+		}
 
 	.title-info {
-		text-align: center;
+		font-size: 1.5em;
 	}
+
+	.handle {
+		letter-spacing: 0.5em;
+	}
+
+	.specialty {
+		letter-spacing: 0.5em;
+	}
+
+}
+/*.presentproj {*/
+	/*width: 50vw;
+}*/
+
+/*
 
 	.title-super /*h1, h2 {
 /*		font-size: 28px;
@@ -126,15 +168,20 @@ a:link {
 
 /*	hr {
 	height: 2px;
-	background: solid red;
-}
+	background: solid red; */
 
-@media screen and (min-width: 500px) {
 
-	.title-logo {
-		width: 16.67%;
+@media screen and (min-width: 400px) and (max-width: 599px) {
+
+	.title-super {
+		font-size: 2em;
 	}
 
+	.handle, .specialty {
+		letter-spacing: 0.5em;
+	}
+
+}/*
 	.title-info {
 		text-align: right;
 	}
@@ -163,33 +210,40 @@ a:link {
 	color: rgba(4, 51, 119, 0.44);
 }
 
+*/
+@media screen and (min-width: 600px) and (max-width: 799px) {
 
-@media screen and (min-width: 650px) {
-
-	.title-logo {
-		width: 16.67%;
+	/*.title-logo {*/
+		/*width: 7vw;*/
+/*		max-width: 50vw;
 	}
+}*/
 
 	.title-super {
-		font-size: 40px;
+		font-size: 3em;
 	}
-
-	.handle {
+}
+/*	.handle {
 		font-size: 16px;
 	}
 
 	.specialty {
 		font-size: 14px;
 	}
-
-@media screen and (min-width: 800px) {
-
-	.title-logo {
-		width: 16.67%;
-	}
+*/
+@media screen and (min-width: 800px) and (max-width: 999px) {
 
 	.title-super {
-		font-size: 45px;
+		font-size: 3em;
+	}
+
+	.projimgs {
+		max-width: 50vw;
+	}
+}
+/*
+	.title-logo {
+		width: 16.67%;
 	}
 
 	.handle {
@@ -205,29 +259,15 @@ a:link {
 		border: 0;
 		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 	}
-
+*/
 @media screen and (min-width: 1000px) {
 
-	.title-logo {
-		width: 16.67%;
-	}
-
-	.title-info {
-		width: 83.33%;
-	}
-
 	.title-super {
-		font-size: 50px;
+		font-size: 5em;
 	}
 
-	.handle {
-		font-size: 20px;
+	.projimgs {
+		max-width: 50vw;
 	}
 
-	.specialty {
-		font-size: 14px;
-	}
 }
-*/
-
-

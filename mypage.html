@@ -7,7 +7,7 @@
     <title>My Portfolio</title>
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script type="text/javascript" src="js/jquery-1.11.3.js">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js">
     </script>
     <script type="text/javascript" src="js/bootstrap.min.js">
     </script>
@@ -16,16 +16,14 @@
   </head>
 
   <body>
-
-<!--       TODO:
-          - make logo svg
-          - update fonts
- -->
-
     <div class="container">
+
+<!--     Heading -->
       <div class="row" id="header">
         <div class="col-md-2">
-          <img class="img-responsive title-logo" src="https://farm6.staticflickr.com/5688/21437259704_9c2cffd3d1_o.png" width="589" height="603" alt="my logo is a fractal snowflake">
+          <!-- Logo source: http://udacity.github.io/responsive-images -->
+          <img class="img-responsive title-logo"
+          src="http://udacity.github.io/responsive-images/images/udacity_logo.svg" alt="Udacity logo">
         </div>
         <div class="col-md-10 title-info">
           <h1 class="title-super">Christine Sales</h1>
@@ -40,97 +38,63 @@
         </div>
       </div>
 
+<!--     Main Image -->
       <div class="row">
         <div class="col-md-12">
-          <img class="img-responsive" src="https://farm6.staticflickr.com/5624/22047896172_fdd46ceb1c_o.jpg" width="3114" height="1755" alt="Main Image">
+          <img class="img-responsive" src="images\IMG_0544-large.jpg" srcset="images\IMG_0544-small.jpg 320w, images\IMG_0544-large.jpg 640w, images\IMG_0544-large-x2.jpg 1024w," alt="Main Image">
         </div>
       </div>
 
+<!--     Featured Work Title -->
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-muted">Featured Work</h2>
+          <h1>Featured Work</h1>
         </div>
       </div>
 
-<!--       TODO: make images responsive
-              - multiple files srcset
-              - compress images
-              - use imagerjs
-              - use media icons
- -->
-
-      <div class="row">
-        <div class="col-md-4">
-          <img class="img-responsive" src="https://farm6.staticflickr.com/5712/21907651962_d41aa1eedf_o.png"
-          width="1363" height="663" alt="AboutMe" data-toggle="modal" data-target="#about">
-          <h3>
+<!--       Featured Work 1  -->
+      <div class="row  presentproj">
+        <div class="col-md-6">
+          <img class="img-responsive projimgs cover" src="images\AboutMeOrig-large.png" srcset="images\AboutMeOrig-small.png 320w, images\AboutMeOrig-large.png 640w, images\AboutMeOrig-large_x2.png 1024w" alt="AboutMe" data-toggle="modal" data-target="#about">
+          <h3 class="projlinks">
             <a href="https://github.com/jinglebot/FE-Project-0">  About Me
             </a>
           </h3>
         </div>
-        <div class="col-md-4">
-          <img class="img-responsive" src="http://placekitten.com/g/350/250" alt="Portfolio" data-toggle="modal" data-target="#portfolio">
-          <h3>
+
+<!--       Featured Work 2  -->
+        <div class="col-md-6">
+          <img class="img-responsive projimgs cover" src="images\placeimghere-large.png" srcset="images\placeimghere-small.png 320w, images\placeimghere-large.png 640w, images\placeimghere-large_x2.png 1024w" alt="Portfolio" data-toggle="modal" data-target="#portfolio">
+          <h3 class="projlinks">
             <a href="https://github.com/jinglebot/MyPortfolio">
               My Portfolio
             </a>
           </h3>
         </div>
-        <div class="col-md-4">
-          <img class="img-responsive" src="https://farm1.staticflickr.com/646/21839702069_2300183e1a_o.png" alt="Programs" data-toggle="modal" data-target="#programs">
-          <h3>
+      </div>
+
+<!--       Featured Work 3  -->
+      <div class="row  presentproj">
+        <div class="col-md-6">
+          <img class="img-responsive projimgs cover" src="images\placeimghere-large.png" srcset="images\placeimghere-small.png 320w, images\placeimghere-large.png 640w, images\placeimghere-large_x2.png 1024w" alt="Resume" data-toggle="modal" data-target="#resume">
+          <h3 class="projlinks">
+            <a href="https://github.com/jinglebot?tab=repositories">
+              Resume
+            </a>
+          </h3>
+        </div>
+
+<!--       Featured Work 4  -->
+        <div class="col-md-6">
+          <img class="img-responsive projimgs cover" src="images\GenerateBinaryCode2-large.png" srcset="images\GenerateBinaryCode2-small.png 320w, images\GenerateBinaryCode2-large.png 640w, images\GenerateBinaryCode2-large_x2.png 1024w" alt="Programs" data-toggle="modal" data-target="#programs">
+          <h3 class="projlinks">
             <a href="https://github.com/jinglebot?tab=repositories">
               C++ Programs
             </a>
           </h3>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <hr class="linestyle">
-        </div>
-      </div>
-
-      <div class="col-md-12">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-1 text-centered">
-          <p>Contact me</p>
-        </div>
-        <div class="col-md-1">
-          <img class="img-responsive" src="http://placekitten.com/g/50/50" alt="email">
-          <a href="jingle1216@yahoo.com">Yahoo</a>
-        </div>
-        <div class="col-md-1">
-          <img class="img-responsive" src="http://placekitten.com/g/50/50" alt="facebook">
-          <a href="Facebook/christine.sales.921">facebook</a>
-        </div>
-        <div class="col-md-1">
-          <img class="img-responsive" src="http://placekitten.com/g/50/50" alt="cellphone">
-          <a href="(650)469-2925">Cellphone</a>
-        </div>
-        <div class="col-md-1">
-          <img class="img-responsive" src="http://placekitten.com/g/50/50" alt="Twitter">
-          <a href="https://twitter.com/jinglebot">Twitter</a>
-        </div>
-        <div class="col-md-1">
-          <img class="img-responsive" src="http://placekitten.com/g/50/50" alt="flicker">
-          <a href="https://www.flickr.com/search/people/?username=jinglebot">flicker</a>
-        </div>
-        <div class="col-md-1">
-          <img class="img-responsive" src="http://placekitten.com/g/50/50" alt="Github">
-          <a href="https://github.com/jinglebot">Github</a>
-        </div>
-        <div class="col-md-1">
-          <img class="img-responsive" src="http://placekitten.com/g/50/50" alt="LinkedIn">
-          <a href="https://www.linkedin.com/in/mariacristinasales">Linkedin</a>
-        </div>
-        <div class="col-md-2">
-        </div>
-      </div>
     </div>
-
 
     <!-- Modal 1 -->
     <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="AboutModalLabel" aria-hidden="true">
@@ -141,18 +105,18 @@
           </div>
           <div class="modal-body">
             <figure>
-              <img class="img-responsive" src="https://farm6.staticflickr.com/5771/21428645648_77fbc2b3c3_o.jpg" alt="AboutMe">
+              <img class="img-responsive" src="images\AboutMeOrig-large.png" srcset="images\AboutMeOrig-small.png 320w, images\AboutMeOrig-large.png 640w, images\AboutMeOrig-large_x2.png 1024w" alt="AboutMe">
               <figcaption>
                 This is the first  project I worked on for the Nanodegree program. It's a one-page website that introduced me to basic HTML and CSS.
               </figcaption>
             </figure>
             <p></p>
             <p>
-              My specialty is in making responsive, user-friendly and lightning-fast websites, with the most amazing looks and the shortest sensible loading time when accessed in any or all mobile devices whether laptop, tablet, smartphone, pc, tv, electronic billboard or smartwatch, and in whatever functional network connection speed or bandwidth.
+               &#10057;My specialty is in making responsive, user-friendly and lightning-fast websites, with the most amazing looks and the shortest sensible loading time when accessed in any or all mobile devices whether laptop, tablet, smartphone, pc, tv, electronic billboard or smartwatch, and in whatever functional network connection speed or bandwidth.
             </p>
             <p>
-              <p>My skills are: </p>
-              <p>HTML CSS Javascript C++ Bootstrap nodejs Grunt ImageMagick Imager</p>
+              <p>&#10057;My skills are: </p>
+              <p>HTML &#10021; CSS &#10021; Javascript &#10021; C++ &#10021; Bootstrap &#10021; nodejs &#10021; Grunt &#10021; ImageMagick</p>
             </p>
           </div>
           <div class="modal-footer">
@@ -168,7 +132,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title" id="PortfolioModalLabel">jinglebot Portfolio</h4>
-          </div>
+          </div>-
           <div class="modal-body">
             <figure>
               <img class="img-responsive" src="http://placekitten.com/g/550/300" alt="Portfolio">
@@ -185,6 +149,25 @@
     </div>
 
     <!-- Modal 3 -->
+    <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="PortfolioModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="PortfolioModalLabel">jinglebot Resume</h4>
+          </div>
+          <div class="modal-body">
+            <figure>
+              <img class="img-responsive" src="images\ComingSoon-large.png" srcset="images\ComingSoon-small.png 320w, images\ComingSoon-large.png 640w, images\ComingSoon-large_x2.png 1024w" alt="Coming soon">
+            </figure>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
     <div class="modal fade" id="programs" tabindex="-1" role="dialog" aria-labelledby="ProgramsModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -193,23 +176,23 @@
           </div>
           <div class="modal-body">
             <figure>
-              <img class="img-responsive" src="https://farm1.staticflickr.com/577/22026604205_44a6cc9b38_o.png" width="1365" height="763" alt="Generate Binary Code">
+              <img class="img-responsive" src="images\Rainbow-large.png" srcset="images\Rainbow-small.png 320w, images\Rainbow-large.png 640w, images\Rainbow-large_x2.png 1024w" alt="Rainbow">
             </figure>
             <p></p>
             <p>
               The following uses basic C++ std libraries, C++ graphics library, QML and sometimes with Stanford CPP Lib files, and runs on Qt Creator.
             </p>
             <p></p>
-            <p>
-              <a href="https://github.com/jinglebot/GenerateBinaryCode">GenerateBinaryCode </a> (see above image) is a program that displays n-number of digits of binary codes on the console, as specified by the user with no duplicates in the output.
+            <p> &#10057;
+              <a href="https://github.com/jinglebot/GenerateBinaryCode">GenerateBinaryCode </a> (see this modal's cover image) is a program that displays n-number of digits of binary codes on the console, as specified by the user with no duplicates in the output.
             </p>
             <p></p>
-            <p>
+            <p> &#10057;
               <a href="https://github.com/jinglebot/CHeMoWIZrDy">CHeMoWIZrDy </a> is a program that writes a user-supplied name with symbols of elements in the Periodic Table.
             </p>
             <p></p>
-            <p>
-              <a href="https://github.com/jinglebot/Rainbow">Rainbow </a> (see this modal cover image) is a program that draws a rainbow on screen.
+            <p> &#10057;
+              <a href="https://github.com/jinglebot/Rainbow">Rainbow </a> (see image) is a program that draws a rainbow on screen.
             </p>
           </div>
           <div class="modal-footer">
