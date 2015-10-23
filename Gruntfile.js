@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
     responsive_images: {
       dev: {
         options: {
@@ -30,9 +32,23 @@ module.exports = function(grunt) {
         }]
       }
     },
+
+    cssmin: {
+      options: {
+        shorthandCompacting: false,
+        roundingPrecision: -1
+      },
+      target: {
+        files: {
+           'css/style.min.css': ['css/style.css']
+        }
+      }
+    }
+
   });
 
   grunt.loadNpmTasks('grunt-responsive-images');
-  grunt.registerTask('default', ['responsive_images']);
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.registerTask('default', ['cssmin']);
 
 };
