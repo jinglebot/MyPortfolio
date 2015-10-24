@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .row {
@@ -65,8 +65,8 @@ a {
 	text-align: center;
 	color: rgba(255, 255, 255, 1);
 	text-shadow: 3px 3px 3px #aaa;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(102, 56, 38, 0.32), rgba(0, 0, 0, 0));
-    background-size: cover;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(102, 56, 38, 0.32), rgba(0, 0, 0, 0));
+	background-size: cover;
 }
 
 .title-super {
@@ -99,14 +99,14 @@ hr {
 }
 
 .projimgs {
-    padding-top: 20px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    vertical-align: middle;
-    justify-content: center;
+	padding-top: 20px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+	justify-content: center;
 }
 
 figcaption {
@@ -139,7 +139,7 @@ p {
 		width: 100%;
 		min-height: 115px;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 	}
 
 	.title-super, h1, h3 {
@@ -191,8 +191,8 @@ p {
 	}
 
 	.col-md-6 {
-	    width: 85%;
-	    margin: auto;
+		width: 85%;
+		margin: auto;
 	}
 
 }
@@ -227,8 +227,8 @@ p {
 	}
 
 	.col-md-6 {
-	    width: 50%;
-	    margin: auto;
+		width: 50%;
+		margin: auto;
 	}
 
 }
@@ -259,8 +259,8 @@ p {
 	}
 
 	.col-md-6 {
-	    width: 50%;
-	    margin: auto;
+		width: 50%;
+		margin: auto;
 	}
 
 	.projimgs {
