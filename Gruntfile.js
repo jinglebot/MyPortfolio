@@ -49,6 +49,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.registerTask('default', ['cssmin']);
+  grunt.registerTask('default', ['responsive_images', 'cssmin']);
 
 };

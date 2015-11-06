@@ -11,14 +11,21 @@
 body {
 	min-width: 300px;
 	margin: auto;
-	font-family: "Orbitron", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #555;
-	background-image: url(backgroundpage3.png);
-	background-size: cover;
+	background-color: #9ecfe7;
+	background-image: url(@jinglebot.png), url(@jinglebot.png), url(@jinglebot.png);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	animation: animatedBackground 90s linear infinite alternate;
+	-webkit-animation: animatedBackground 90s linear infinite alternate;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 75vw 5vh, 100vw 40vh,-100vw 50vh; }
+	to { background-position: -100vw 45vh, -100vw 120vh, 100vw 150vh; }
 }
 
 .cajon {
-	max-width: 1000px;
 	margin: auto;
 }
 
@@ -27,7 +34,11 @@ img {
 	text-align: center;
 	align-items: center;
 	margin: auto;
-	box-shadow: 4px 4px 4px #888;
+	border-radius: 25px;
+	position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #aaa;
+	box-shadow: 3px 3px 3px #888;
 }
 
 h3 {
@@ -37,15 +48,18 @@ h3 {
 }
 
 a {
-	color: #333;
+	color: #f64;
+	text-shadow: 1px 1px 1px #888;
 	font-weight: bolder;
 	min-height: 48px;
+	letter-spacing: 0.07em;
 }
 
 /* Header */
 
 #header {
 	justify-content: center;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(102, 56, 38, 0.5), rgba(0, 0, 0, 0));
 }
 
 .title-logo {
@@ -65,14 +79,13 @@ a {
 	text-align: center;
 	color: #fff;
 	text-shadow: 3px 3px 3px #888;
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(102, 56, 38, 0.32), rgba(0, 0, 0, 0));
-	background-size: cover;
 }
 
 .title-super {
 	margin-top: 30px;
-	font-size: 6em;
-	font-weight: bolder;
+	font-size: 5em;
+	font-weight: 700;
+	letter-spacing: 0.025em;
 	text-transform: uppercase;
 }
 
@@ -82,6 +95,12 @@ a {
 
 .specialty {
 	letter-spacing: 0.5em;
+}
+
+.fw-title {
+	color: #f63;
+	text-shadow: 2px 2px 2px #888;
+	letter-spacing: 0.125em;
 }
 
 /* from https://css-tricks.com/examples/hrs/ */
@@ -99,10 +118,8 @@ hr {
 }
 
 .projimgs {
-	padding-top: 20px;
 	display: block;
 	width: 100%;
-	height: 100%;
 	text-align: center;
 	align-items: center;
 	vertical-align: middle;
@@ -122,6 +139,7 @@ p {
 
 .css-validator {
 	border: 0;
+	border-radius: 0;
 	width: 88px;
 	height: 31px;
 }
@@ -131,7 +149,7 @@ p {
 @media screen and (max-width: 449px) {
 
 	body {
-		background-image: linear-gradient(to bottom, rgba(102, 56, 38, 0.32), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+		background-size: 40vh;
 	}
 
 	.title-logo {
@@ -199,7 +217,7 @@ p {
 		font-size: 1.5em;
 	}
 
-	.col-md-6 {
+	.col-md-3 {
 		width: 85%;
 		margin: auto;
 	}
@@ -237,7 +255,7 @@ p {
 		font-size: 1.75em;
 	}
 
-	.col-md-6 {
+	.col-md-3 {
 		width: 50%;
 		margin: auto;
 	}
@@ -269,7 +287,7 @@ p {
 		display: none;
 	}
 
-	.col-md-6 {
+	.col-md-3 {
 		width: 50%;
 		margin: auto;
 	}
@@ -283,7 +301,7 @@ p {
 @media screen and (min-width: 1000px) {
 
 	.title-super {
-		font-size: 5em;
+		font-size: 6em;
 	}
 
 	hr {
@@ -292,6 +310,11 @@ p {
 
 	.projimgs {
 		max-width: 50vw;
+	}
+
+	.col-md-3 {
+		width: 25%;
+		margin: auto;
 	}
 
 }
